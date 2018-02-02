@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: #F37A1D;
+ border-top: 3px solid #F37A1D;
+}
+
+table {
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.white_text {
+color:white;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+}
+
+
+.footer_links {
+
+}
+
+
+.footer_links:link {
+    color:black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:visited {
+    color: black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:hover {
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}
+
+.footer_links:active {
+    color: black;
+    font-family: 'Lato', sans-serif;
+  	font-weight: 400;
+}

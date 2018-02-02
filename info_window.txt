@@ -1,0 +1,7 @@
+<div class='googft-info-window'>
+<b>StopNumber:</b> <a href="http://localhost/dublin_transport/dbindex.php?o=getStopTimes&stop={StopNumber}" target="_blank">{StopNumber}</a><br>
+<b>Route:</b> {Route}<br>
+<b>Direction:</b> {Direction}<br>
+<b>Address:</b> {Address}<br>
+<b>Location:</b> {Location}
+</div>
