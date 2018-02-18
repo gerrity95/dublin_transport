@@ -25,9 +25,9 @@ include("menus/main_menu.php");
  ?>
 
 
-  <div style="margin-bottom:0px;" class="jumbotron">
+  <div style="margin-bottom:50px;" class="jumbotron">
 
-      <div  class="col-sm-12 col-md-12 col-lg-12">
+      <div style="" class="col-sm-12 col-md-12 col-lg-12">
   	<div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
   		<center><h1>Dublin Bus</h1></center>
 
@@ -39,9 +39,9 @@ include("menus/main_menu.php");
         Get Stop info
         <form method="get" action="dbstop.php">
           <input type="hidden" value="getStopTimes" type="text" name="o">
-          <input type="text" name="stop">
+          <input type="text" class="form-control" name="stop">
           <br><br>
-          <input type="submit" value="Submit">
+          <input type="submit" class="btn button_style" value="Submit">
 
         </form>
 
@@ -101,15 +101,14 @@ include("menus/main_menu.php");
 
       </div>
 
-      <div style="border-left:1px solid #dbdfe5" class="col-sm-5 col-md-5 col-lg-5 offset-1">
+      <div style="border-left:1px solid #dbdfe5;padding-top:30px" class="col-sm-5 col-md-5 col-lg-5 offset-1">
 
-        <br>
         Get Route info
         <form method="get" action="dbroute.php">
         	<input type="hidden" value="getStops" type="text" name="o">
-          <input type="text" name="route">
+          <input type="text" class="form-control" name="route">
           <br><br>
-          <input type="submit" value="Submit">
+          <input type="submit" class="btn button_style" value="Submit">
 
         </form>
         <br>
@@ -163,6 +162,14 @@ include("menus/main_menu.php");
       </div>
 
   </div>
+
+</div>
+
+</div>
+
+<div class="container-fluid" style="margin-top:150px;margin-bottom:20px;">
+  <?php include("content_pages/footer.php"); ?>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

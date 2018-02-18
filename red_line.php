@@ -36,7 +36,7 @@ include("menus/main_menu.php");
       <div  class="col-sm-12 col-md-12 col-lg-12">
   	<div style="border-bottom:0px;" class="page-header" style="padding-top:20px">
   		<center><h1>Red Line</h1></center>
-
+    </div>
   </div>
 
   <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
@@ -105,13 +105,17 @@ include("menus/main_menu.php");
         <?php
 
           include "backend/luas_back.php";
-
-          session_unset();
          ?>
       </div>
 
   </div>
 
+</div>
+
+
+  <div class="container-fluid" style="margin-bottom:20px;">
+    <?php include("content_pages/footer.php"); ?>
+  </div>
 <body>
 
 </body>

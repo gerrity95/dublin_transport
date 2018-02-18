@@ -1,1 +1,5 @@
 backend/*
+acknowledgements.txt
+info_window.txt
+route_numbers.txt
+scraper.py

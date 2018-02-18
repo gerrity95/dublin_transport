@@ -3,7 +3,7 @@
 
 
 <link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
-
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'  type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -28,23 +28,39 @@ include("menus/main_menu.php");
 
 
 
-  <div style="padding-top:40px;padding-bottom:40px;background:#ededed" class="row">
-      <div style="" class="col-sm-6 col-md-4 col-lg-4 offset-3">
+  <div style="padding-top:40px;padding-bottom:40px;background:#ededed;" class="row">
+      <div style="min-height:50%;" class="col-sm-6 col-md-4 col-lg-4 offset-3">
         <h2  style="font-family: 'Lato', sans-serif;">Luas</h2>
         <br>
         <a href="http://localhost/dublin_transport/green_line.php?action=times&station=">Green Line</a>
         <br><br>
         <a href="http://localhost/dublin_transport/red_line.php?action=times&station=">Red Line</a>
+        <br><br>
+
+        <div class="sticky-bottom">
+          <button type="button" class="btn btn-lg button_style"  data-toggle="modal" data-target="#luasModal">Quick Search</button>
+
+            <?php include($root . "modals/luas_quick.php"); ?>
+        </div>
 
      <br>
 
 
       </div>
-      <div style="border-left:1px solid #dbdfe5" class="col-sm-6 col-md-4 col-lg-4">
+      <div style="border-left:1px solid #dbdfe5;min-height:50%;" class="col-sm-6 col-md-4 col-lg-4">
           <h2 style="font-family: 'Lato', sans-serif;">Dublin Bus</h2>
           <br>
           <a href="http://localhost/dublin_transport/dbindex.php">Route & Stop Info</a>
-           <br>
+          <br><br>
+          <a href="#">Stops Near Me</a>
+          <br><br>
+
+            <div class="sticky-bottom">
+            <button type="button" class="btn btn-lg button_style"  data-toggle="modal" data-target="#busModal">Quick Search</button>
+
+              <?php include($root . "modals/bus_quick.php"); ?>
+            </div>
+
       </div>
 
   </div>
@@ -53,11 +69,9 @@ include("menus/main_menu.php");
 
 </div>
 
-<div class="container-fluid" style="margin-bottom:20px;">
+<div class="container-fluid" style="margin-bottom:200px;">
   <?php include("content_pages/footer.php"); ?>
 </div>
-
-
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

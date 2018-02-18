@@ -11,19 +11,21 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background: #F37A1D;
+  height: 200px;
+  background: #343a40;
  border-top: 3px solid #F37A1D;
 }
 
 table {
     margin-top: 20px;
-    font-family: arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     border-collapse: collapse;
     width: 30%;
 }
@@ -44,6 +46,11 @@ font-family: 'Lato', sans-serif;
 font-weight: 400;
 }
 
+.button_style {
+  background-color:#F37A1D;
+  color:white;
+  font-family: 'Lato', sans-serif;
+}
 
 .footer_links {
 
@@ -51,13 +58,13 @@ font-weight: 400;
 
 
 .footer_links:link {
-    color:black;
+    color:white;
     font-family: 'Lato', sans-serif;
   	font-weight: 400;
 }
 
 .footer_links:visited {
-    color: black;
+    color: white;
     font-family: 'Lato', sans-serif;
   	font-weight: 400;
 }
@@ -69,7 +76,7 @@ font-weight: 400;
 }
 
 .footer_links:active {
-    color: black;
+    color: white;
     font-family: 'Lato', sans-serif;
   	font-weight: 400;
 }
